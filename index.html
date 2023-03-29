@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Likeador de perros</title>
+  </head>
+  <body>
+    <h1>¿Te gusta este perro?</h1>
+    <div class="fotoPrincipalContainer">
+      <div id="spinner"></div>
+      <img src="#" alt="" id="perroActual" />
+    </div>
+    <div>
+      <button id="like" onclick="rankingPerros('+')">👍</button>
+      <button id="saltear" onclick="nuevoPerro()">Saltear</button>
+      <button id="dislike" onclick="rankingPerros('-')">👎</button>
+    </div>
+    <div class="contenedorPerros" id="contenedorLikePerros"></div>
+    <div class="contenedorPerros" id="contenedorDisLikePerros"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
